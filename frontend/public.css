@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 76px;
+    background: white;
+    border-bottom: 1px solid #e8edf5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #5b4df7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #596477;
+    font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #5b4df7;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login-btn {
+    border: 1px solid #d8deea;
+    background: white;
+}
+
+.signup-btn {
+    background: #5b4df7;
+    color: white;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    padding: 85px 8%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #ece9ff,
+            transparent 45%
+        );
+}
+
+.page-label {
+    color: #5b4df7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.page-hero h1 {
+    font-size: 46px;
+    margin-bottom: 17px;
+}
+
+.page-hero > p {
+    color: #6f7a8d;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   EXAMS
+========================= */
+
+.exam-container {
+    padding: 70px 8% 100px;
+}
+
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.exam-card {
+    background: white;
+    border: 1px solid #e3e7ee;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.25s;
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    border-color: #5b4df7;
+
+    box-shadow:
+        0 15px 35px rgba(30,40,80,.08);
+}
+
+.exam-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+
+    background: #efedff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 20px;
+}
+
+.exam-card h2 {
+    margin-bottom: 8px;
+}
+
+.exam-card p {
+    color: #7a8495;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 42px;
+}
+
+.exam-info {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+
+    color: #697386;
+    font-size: 12px;
+}
+
+.explore-btn {
+    display: inline-block;
+
+    background: #5b4df7;
+    color: white;
+
+    padding: 11px 17px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.content-section {
+    padding: 75px 8%;
+}
+
+.white-section {
+    background: white;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #7a8495;
+}
+
+
+/* =========================
+   TEST SERIES
+========================= */
+
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.series-card {
+    background: white;
+    border: 1px solid #e2e6ed;
+    border-radius: 15px;
+    padding: 27px;
+}
+
+.series-tag {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: #eceaff;
+    color: #5b4df7;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.series-card h3 {
+    margin: 18px 0 10px;
+}
+
+.series-description {
+    color: #7a8495;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.series-card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.series-card li {
+    margin: 10px 0;
+    font-size: 13px;
+    color: #596477;
+}
+
+.price {
+    border-top: 1px solid #e8ebf0;
+    padding-top: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price strong {
+    font-size: 22px;
+}
+
+.price a {
+    background: #5b4df7;
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   TEST SERIES DETAILS
+========================= */
+
+.details-container {
+    padding: 60px 8% 100px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 45px;
+}
+
+.details-main {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #e4e8ef;
+}
+
+.details-main h2 {
+    margin: 30px 0 15px;
+}
+
+.details-main p {
+    color: #697386;
+    line-height: 1.8;
+}
+
+.details-main ul {
+    margin: 15px 0 0 20px;
+}
+
+.details-main li {
+    margin: 12px 0;
+    color: #596477;
+}
+
+.purchase-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e4e8ef;
+
+    height: fit-content;
+
+    position: sticky;
+    top: 100px;
+}
+
+.purchase-card .old-price {
+    text-decoration: line-through;
+    color: #929aaa;
+}
+
+.purchase-card .new-price {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 7px 0;
+}
+
+.discount {
+    color: #1f9d68;
+    font-size: 13px;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+
+    background: #5b4df7;
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    margin: 22px 0;
+
+    font-weight: 700;
+}
+
+.purchase-card p {
+    font-size: 12px;
+    color: #7a8495;
+    text-align: center;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px 30px 100px;
+}
+
+.about-content h2 {
+    margin: 35px 0 12px;
+    font-size: 28px;
+}
+
+.about-content p {
+    color: #667085;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container {
+    max-width: 750px;
+    margin: 70px auto 100px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e3e7ee;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 8px;
+
+    padding: 13px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5b4df7;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #5b4df7;
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   LEGAL
+========================= */
+
+.legal-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 70px 30px 100px;
+}
+
+.legal-container h2 {
+    margin: 35px 0 12px;
+}
+
+.legal-container p {
+    color: #667085;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111827;
+    color: white;
+
+    padding: 60px 8% 25px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand h2 span {
+    color: #8176ff;
+}
+
+.footer-brand p {
+    color: #9ca5b4;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h4 {
+    margin-bottom: 7px;
+}
+
+.footer-column a {
+    color: #9ca5b4;
+    font-size: 13px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #273143;
+
+    margin-top: 45px;
+    padding-top: 22px;
+
+    text-align: center;
+
+    color: #7d8797;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .exam-grid,
+    .series-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-container {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-card {
+        position: static;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .exam-grid,
+    .series-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

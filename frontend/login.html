@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CrackIt</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <div class="auth-page">
+
+        <!-- LEFT SIDE -->
+        <div class="auth-left">
+
+            <a href="index.html" class="logo">
+                Crack<span>It</span>
+            </a>
+
+            <div class="left-content">
+
+                <div class="small-badge">
+                    🚀 Prepare smarter with CrackIt
+                </div>
+
+                <h1>
+                    Your preparation.<br>
+                    <span>Your progress.</span>
+                </h1>
+
+                <p>
+                    Practice mock tests, analyse your performance
+                    and prepare smarter for India's toughest
+                    competitive examinations.
+                </p>
+
+                <div class="benefits">
+
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+
+                        <div>
+                            <h3>Exam-like Mock Tests</h3>
+                            <p>
+                                Practice according to the latest exam pattern.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+
+                        <div>
+                            <h3>Detailed Analytics</h3>
+                            <p>
+                                Identify your strengths and weak areas.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+
+                        <div>
+                            <h3>All India Ranking</h3>
+                            <p>
+                                Compare your performance with other aspirants.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="auth-right">
+
+            <div class="auth-box">
+
+                <div class="mobile-logo">
+                    Crack<span>It</span>
+                </div>
+
+                <h2>Welcome back</h2>
+
+                <p class="auth-subtitle">
+                    Enter your details to continue your preparation.
+                </p>
+
+
+                <form id="login-form" novalidate>
+
+                    <!-- username -->
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Enter your username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <div class="password-heading">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="forgot-password.html">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="password-container">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="toggle-password"
+                                class="show-password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REMEMBER -->
+
+                    <div class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+
+                        <label for="remember">
+                            Remember me
+                        </label>
+
+                    </div>
+
+                    
+                    <!-- LOGIN BUTTON -->
+                    <p class="form-error" id="form-error"></p>
+
+                    <button
+                        type="submit"
+                        class="auth-button"
+                        id="login-button"
+                    >
+                        Login
+                    </button>
+
+                </form>
+
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+
+                <button class="google-button">
+
+                    <span class="google-logo">
+                        G
+                    </span>
+
+                    Continue with Google
+
+                </button>
+
+
+                <p class="switch-page">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create account
+                    </a>
+
+                </p>
+
+
+                <a href="index.html" class="back-home">
+                    ← Back to CrackIt
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

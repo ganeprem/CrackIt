@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | CrackIt</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="index.html" class="dashboard-logo">
+                Crack<span>It</span>
+            </a>
+
+            <button
+                class="close-sidebar"
+                id="closeSidebar"
+                type="button"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="my-tests.html" class="nav-item">
+                <span class="nav-icon">📝</span>
+                My Tests
+            </a>
+
+            <a href="performance.html" class="nav-item">
+                <span class="nav-icon">📊</span>
+                Performance
+            </a>
+
+            <a href="exams.html" class="nav-item">
+                <span class="nav-icon">📚</span>
+                Test Series
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🏆</span>
+                Results
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                Profile
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="login.html" class="nav-item logout">
+                <span class="nav-icon">↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+    <main class="main-area">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+                <div>
+                    <h2>Dashboard</h2>
+
+                    <p>
+                        Track your preparation and keep improving.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="notification-button"
+                    type="button"
+                    aria-label="Notifications"
+                >
+                    🔔
+                    <span class="notification-dot"></span>
+                </button>
+
+
+                <a href="profile.html" class="user-profile">
+
+                    <div class="user-avatar">
+                        S
+                    </div>
+
+                    <div class="user-info">
+                        <strong>Student</strong>
+                        <span>Aspirant</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================
+             DASHBOARD CONTENT
+        ========================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <section class="welcome-section">
+
+                <div>
+
+                    <p class="welcome-label">
+                        YOUR PREPARATION
+                    </p>
+
+                    <h1>
+                        Welcome back, Student 👋
+                    </h1>
+
+                    <p>
+                        Continue practising and move one step
+                        closer to your target score.
+                    </p>
+
+                </div>
+
+
+                <a href="exams.html" class="primary-dashboard-btn">
+                    Explore Tests →
+                </a>
+
+            </section>
+
+
+            <!-- =========================================
+                 STAT CARDS
+            ========================================== -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        📝
+                    </div>
+
+                    <div>
+                        <p>Tests Attempted</p>
+                        <h3>12</h3>
+
+                        <span class="positive">
+                            +3 this week
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        🎯
+                    </div>
+
+                    <div>
+                        <p>Average Score</p>
+                        <h3>78%</h3>
+
+                        <span class="positive">
+                            ↑ 6% improvement
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <p>Accuracy</p>
+                        <h3>82%</h3>
+
+                        <span>
+                            Last 5 tests
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        🏆
+                    </div>
+
+                    <div>
+                        <p>Best Rank</p>
+                        <h3>124</h3>
+
+                        <span>
+                            All India Rank
+                        </span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 MAIN DASHBOARD GRID
+            ========================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- LEFT COLUMN -->
+
+                <div class="dashboard-column">
+
+
+                    <!-- CONTINUE PRACTISING -->
+
+                    <section class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <div>
+                                <h2>Continue Practising</h2>
+
+                                <p>
+                                    Pick up where you left off.
+                                </p>
+                            </div>
+
+                            <a href="my-tests.html">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <div class="continue-test">
+
+                            <div class="test-symbol">
+                                ⚙️
+                            </div>
+
+
+                            <div class="continue-info">
+
+                                <span class="exam-badge">
+                                    GATE ECE
+                                </span>
+
+                                <h3>
+                                    GATE ECE Mock Test 06
+                                </h3>
+
+                                <p>
+                                    Full Length Mock Test
+                                </p>
+
+
+                                <div class="test-progress-row">
+
+                                    <div class="test-progress">
+
+                                        <div
+                                            class="test-progress-fill"
+                                            style="width: 65%;"
+                                        ></div>
+
+                                    </div>
+
+                                    <span>
+                                        65%
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="my-tests.html"
+                               class="continue-button">
+
+                                Continue
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PERFORMANCE CHART -->
+
+                    <section class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <h2>
+                                    Recent Performance
+                                </h2>
+
+                                <p>
+                                    Scores from your recent mock tests.
+                                </p>
+
+                            </div>
+
+                            <a href="performance.html">
+                                Full analysis
+                            </a>
+
+                        </div>
+
+
+                        <div class="chart-container">
+
+                            <div class="chart-y-axis">
+                                <span>100</span>
+                                <span>75</span>
+                                <span>50</span>
+                                <span>25</span>
+                                <span>0</span>
+                            </div>
+
+
+                            <div class="chart-area">
+
+                                <div class="grid-line line-100"></div>
+                                <div class="grid-line line-75"></div>
+                                <div class="grid-line line-50"></div>
+                                <div class="grid-line line-25"></div>
+                                <div class="grid-line line-0"></div>
+
+
+                                <div class="chart-bars">
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 62%;"
+                                        >
+                                            <span>62%</span>
+                                        </div>
+
+                                        <p>T1</p>
+
+                                    </div>
+
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 68%;"
+                                        >
+                                            <span>68%</span>
+                                        </div>
+
+                                        <p>T2</p>
+
+                                    </div>
+
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 71%;"
+                                        >
+                                            <span>71%</span>
+                                        </div>
+
+                                        <p>T3</p>
+
+                                    </div>
+
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 75%;"
+                                        >
+                                            <span>75%</span>
+                                        </div>
+
+                                        <p>T4</p>
+
+                                    </div>
+
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 78%;"
+                                        >
+                                            <span>78%</span>
+                                        </div>
+
+                                        <p>T5</p>
+
+                                    </div>
+
+
+                                    <div class="bar-item">
+
+                                        <div
+                                            class="bar"
+                                            style="height: 84%;"
+                                        >
+                                            <span>84%</span>
+                                        </div>
+
+                                        <p>T6</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- RECENT TESTS -->
+
+                    <section class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <div>
+                                <h2>Recent Tests</h2>
+
+                                <p>
+                                    Your latest test attempts.
+                                </p>
+                            </div>
+
+                            <a href="my-tests.html">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <div class="table-wrapper">
+
+                            <table class="recent-table">
+
+                                <thead>
+
+                                <tr>
+                                    <th>Test</th>
+                                    <th>Score</th>
+                                    <th>Accuracy</th>
+                                    <th>Rank</th>
+                                    <th></th>
+                                </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            GATE ECE Mock 05
+                                        </strong>
+
+                                        <span>
+                                            GATE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        84%
+                                    </td>
+
+                                    <td>
+                                        88%
+                                    </td>
+
+                                    <td>
+                                        124
+                                    </td>
+
+                                    <td>
+                                        <a href="#">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            Networks Subject Test
+                                        </strong>
+
+                                        <span>
+                                            GATE ECE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        78%
+                                    </td>
+
+                                    <td>
+                                        81%
+                                    </td>
+
+                                    <td>
+                                        256
+                                    </td>
+
+                                    <td>
+                                        <a href="#">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>
+                                            Analog Circuits Test
+                                        </strong>
+
+                                        <span>
+                                            GATE ECE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        72%
+                                    </td>
+
+                                    <td>
+                                        79%
+                                    </td>
+
+                                    <td>
+                                        318
+                                    </td>
+
+                                    <td>
+                                        <a href="#">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- =========================================
+                     RIGHT COLUMN
+                ========================================== -->
+
+                <div class="dashboard-side-column">
+
+
+                    <!-- DAILY GOAL -->
+
+                    <section class="dashboard-card daily-goal-card">
+
+                        <div class="card-heading">
+
+                            <div>
+                                <h2>Daily Goal</h2>
+
+                                <p>Today's progress</p>
+                            </div>
+
+                            <span>
+                                🔥 4 days
+                            </span>
+
+                        </div>
+
+
+                        <div class="goal-circle">
+
+                            <div class="goal-circle-inner">
+
+                                <strong>
+                                    75%
+                                </strong>
+
+                                <span>
+                                    Complete
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="goal-text">
+
+                            45 of 60 minutes completed
+
+                        </p>
+
+
+                        <div class="goal-progress">
+
+                            <div style="width:75%;"></div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- SUBJECT PERFORMANCE -->
+
+                    <section class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <h2>
+                                    Subject Performance
+                                </h2>
+
+                                <p>
+                                    Your current strengths
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="subject-list">
+
+
+                            <div class="subject-item">
+
+                                <div class="subject-heading">
+
+                                    <span>
+                                        Networks
+                                    </span>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                </div>
+
+                                <div class="subject-progress">
+
+                                    <div style="width:86%;"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="subject-item">
+
+                                <div class="subject-heading">
+
+                                    <span>
+                                        Digital Electronics
+                                    </span>
+
+                                    <strong>
+                                        82%
+                                    </strong>
+
+                                </div>
+
+                                <div class="subject-progress">
+
+                                    <div style="width:82%;"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="subject-item">
+
+                                <div class="subject-heading">
+
+                                    <span>
+                                        Signals & Systems
+                                    </span>
+
+                                    <strong>
+                                        74%
+                                    </strong>
+
+                                </div>
+
+                                <div class="subject-progress">
+
+                                    <div style="width:74%;"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="subject-item">
+
+                                <div class="subject-heading">
+
+                                    <span>
+                                        Analog Circuits
+                                    </span>
+
+                                    <strong>
+                                        68%
+                                    </strong>
+
+                                </div>
+
+                                <div class="subject-progress">
+
+                                    <div style="width:68%;"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="performance.html"
+                           class="full-width-outline">
+
+                            View Detailed Analysis
+
+                        </a>
+
+                    </section>
+
+
+                    <!-- RECOMMENDED -->
+
+                    <section class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <h2>
+                                    Recommended
+                                </h2>
+
+                                <p>
+                                    Based on your performance
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="recommended-card">
+
+                            <div class="recommended-icon">
+                                ⚡
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    FOCUS AREA
+                                </span>
+
+                                <h3>
+                                    Analog Circuits
+                                </h3>
+
+                                <p>
+                                    Your accuracy is lower in this subject.
+                                </p>
+
+                                <a href="my-tests.html">
+                                    Practice Now →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

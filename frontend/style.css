@@ -1,0 +1,1372 @@
+/* =========================================================
+   CRACKIT - MAIN HOMEPAGE STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   2. NAVBAR
+========================================================= */
+
+.navbar {
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #e8edf5;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+
+    color: #172033;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #5b4df7;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #505b70;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #5b4df7;
+}
+
+
+/* LOGIN / SIGNUP */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.login-btn {
+    background: white;
+
+    color: #172033;
+
+    border: 1px solid #d8deea;
+}
+
+.login-btn:hover {
+    background: #f7f8fb;
+
+    border-color: #c6ccda;
+}
+
+.signup-btn {
+    background: #5b4df7;
+
+    border: 1px solid #5b4df7;
+
+    color: white;
+}
+
+.signup-btn:hover {
+    background: #493bdc;
+
+    border-color: #493bdc;
+}
+
+
+/* =========================================================
+   3. HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 70px 8%;
+
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            #ece9ff 0,
+            transparent 35%
+        ),
+        #f8fafc;
+}
+
+
+/* HERO TEXT */
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    background: #eceaff;
+
+    color: #5546e8;
+
+    padding: 9px 16px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 62px;
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #5b4df7;
+}
+
+.hero-content > p {
+    font-size: 18px;
+
+    color: #68748a;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 14px 23px;
+
+    border-radius: 9px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background: #5b4df7;
+
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #493bdc;
+
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: white;
+
+    color: #172033;
+
+    border: 1px solid #dbe1ea;
+}
+
+.secondary-btn:hover {
+    border-color: #5b4df7;
+
+    color: #5b4df7;
+}
+
+
+/* HERO STATISTICS */
+
+.hero-stats {
+    display: flex;
+
+    margin-top: 45px;
+
+    gap: 50px;
+}
+
+.hero-stats h3 {
+    font-size: 23px;
+}
+
+.hero-stats p {
+    color: #7b8495;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   4. HERO PERFORMANCE CARD
+========================================================= */
+
+.hero-card {
+    width: 390px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #eceef4;
+
+    box-shadow:
+        0 25px 60px rgba(50, 50, 100, 0.12);
+
+    transform: rotate(1deg);
+
+    transition: 0.3s;
+}
+
+.hero-card:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+
+/* PERFORMANCE TITLE */
+
+.mini-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+}
+
+.mini-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    background: #eceaff;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-card p {
+    color: #8a94a5;
+
+    font-size: 12px;
+}
+
+.mini-card h3 {
+    font-size: 16px;
+
+    margin-top: 2px;
+}
+
+
+/* SCORE */
+
+.score-box {
+    background: #f8f9fd;
+
+    padding: 22px;
+
+    border-radius: 14px;
+}
+
+.score-box > p:first-child {
+    color: #7b8495;
+
+    font-size: 13px;
+}
+
+.score {
+    font-size: 46px;
+
+    font-weight: 800;
+
+    margin: 12px 0;
+}
+
+.score span {
+    font-size: 22px;
+
+    color: #5b4df7;
+}
+
+
+/* SCORE PROGRESS */
+
+.progress-bar {
+    height: 8px;
+
+    background: #e1e5ee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+
+    width: 87%;
+
+    background: #5b4df7;
+
+    border-radius: 10px;
+}
+
+.rank {
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    color: #5b4df7;
+}
+
+
+/* PERFORMANCE SMALL STATS */
+
+.small-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 22px;
+
+    text-align: center;
+}
+
+.small-stats > div {
+    padding: 5px;
+}
+
+.small-stats span {
+    font-size: 15px;
+}
+
+.small-stats p {
+    color: #8a94a5;
+
+    font-size: 11px;
+
+    margin: 5px;
+}
+
+.small-stats strong {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   5. COMMON SECTIONS
+========================================================= */
+
+.exam-section,
+.test-section,
+.features {
+    padding: 90px 8%;
+}
+
+.exam-section {
+    background: white;
+}
+
+.test-section {
+    background: #f7f8fc;
+}
+
+.features {
+    background: white;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+}
+
+.section-label {
+    color: #5b4df7 !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+
+    line-height: 1.25;
+
+    margin-bottom: 14px;
+}
+
+.section-heading > p {
+    color: #7b8495;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   6. EXAM CARDS
+========================================================= */
+
+.exam-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.exam-card {
+    background: white;
+
+    border: 1px solid #e5e8ef;
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    transition: 0.3s;
+}
+
+.exam-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #5b4df7;
+
+    box-shadow:
+        0 15px 30px rgba(50, 50, 100, 0.08);
+}
+
+
+/* EXAM ICON */
+
+.exam-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #efedff;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 21px;
+}
+
+.exam-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 9px;
+}
+
+.exam-card p {
+    color: #7a8497;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 42px;
+}
+
+
+/* EXPLORE TEST LINK */
+
+.exam-card > a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #5b4df7;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+.exam-card > a:hover {
+    color: #4033d0;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   7. TEST SERIES
+========================================================= */
+
+.test-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.test-card {
+    background: white;
+
+    border: 1px solid #e6e9ef;
+
+    border-radius: 16px;
+
+    padding: 27px;
+
+    transition: 0.3s;
+}
+
+.test-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(40, 40, 80, 0.09);
+}
+
+
+/* TOP OF TEST CARD */
+
+.test-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.tag {
+    background: #eceaff;
+
+    color: #5b4df7;
+
+    padding: 6px 11px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.rating {
+    font-size: 12px;
+
+    color: #f39c12;
+}
+
+
+/* TEST CONTENT */
+
+.test-card h3 {
+    font-size: 20px;
+
+    margin: 20px 0 10px;
+
+    line-height: 1.4;
+}
+
+.description {
+    color: #7c8698;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 62px;
+}
+
+.test-card ul {
+    list-style: none;
+
+    margin: 22px 0;
+}
+
+.test-card li {
+    font-size: 13px;
+
+    margin: 11px 0;
+
+    color: #596477;
+}
+
+
+/* PRICE */
+
+.price-row {
+    border-top: 1px solid #edf0f4;
+
+    padding-top: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+
+    color: #9da5b4;
+
+    font-size: 12px;
+
+    margin-right: 5px;
+}
+
+.price-row strong {
+    font-size: 21px;
+}
+
+
+/* VIEW SERIES BUTTON */
+
+.series-button {
+    display: inline-block;
+
+    background: #5b4df7;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+.series-button:hover {
+    background: #493bdc;
+
+    transform: translateY(-1px);
+}
+
+
+/* Keep old button styling compatible */
+
+.price-row button {
+    border: none;
+
+    background: #5b4df7;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.price-row button:hover {
+    background: #493bdc;
+}
+
+
+/* =========================================================
+   8. FEATURES / WHY CRACKIT
+========================================================= */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    text-align: center;
+
+    padding: 30px 25px;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background: #fafaff;
+
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    background: #efedff;
+
+    color: #5b4df7;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 13px;
+
+    color: #7b8495;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   9. HOW IT WORKS
+========================================================= */
+
+/*
+   The How It Works section uses:
+   .exam-section
+   .feature-grid
+   .feature-card
+   .feature-icon
+
+   Therefore most styling is reused above.
+*/
+
+.exam-section .feature-card {
+    border: 1px solid #edf0f4;
+
+    background: #ffffff;
+}
+
+.exam-section .feature-card:hover {
+    border-color: #dcd8ff;
+
+    box-shadow:
+        0 12px 30px rgba(50, 50, 100, 0.06);
+}
+
+
+/* =========================================================
+   10. CTA
+========================================================= */
+
+.cta {
+    margin: 50px 8% 90px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4df7,
+            #6759f5
+        );
+
+    color: white;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    box-shadow:
+        0 20px 45px rgba(91, 77, 247, 0.18);
+}
+
+.cta h2 {
+    font-size: 31px;
+
+    margin-bottom: 9px;
+}
+
+.cta p {
+    color: #dedbff;
+
+    line-height: 1.6;
+}
+
+.cta > a {
+    background: white;
+
+    color: #4f42df;
+
+    padding: 14px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+.cta > a:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   11. FOOTER
+========================================================= */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    padding: 65px 8% 25px;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+
+/* FOOTER BRAND */
+
+.footer-brand h2 {
+    font-size: 27px;
+}
+
+.footer-brand h2 span {
+    color: #8176ff;
+}
+
+.footer-brand p {
+    color: #9da6b5;
+
+    line-height: 1.7;
+
+    margin-top: 15px;
+
+    max-width: 330px;
+
+    font-size: 13px;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.footer-column h4 {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+}
+
+.footer-column a {
+    color: #9da6b5;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+.footer-column a:hover {
+    color: white;
+
+    transform: translateX(2px);
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    border-top: 1px solid #273143;
+
+    margin-top: 50px;
+
+    padding-top: 22px;
+
+    text-align: center;
+
+    color: #7d8797;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   12. TABLET RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+}
+
+
+/* =========================================================
+   13. SMALL TABLETS
+========================================================= */
+
+@media (max-width: 950px) {
+
+    /* NAVIGATION */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 70px;
+
+        padding-bottom: 80px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 420px;
+
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+
+    /* EXAMS */
+
+    .exam-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* TEST SERIES */
+
+    .test-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .description {
+        min-height: auto;
+    }
+
+
+    /* FEATURES */
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   14. MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 68px;
+
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .signup-btn {
+        padding: 9px 15px;
+
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        padding: 55px 5% 70px;
+
+        gap: 50px;
+    }
+
+    .hero-badge {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+    .hero-stats {
+        gap: 25px;
+
+        justify-content: space-between;
+    }
+
+    .hero-stats h3 {
+        font-size: 19px;
+    }
+
+    .hero-stats p {
+        font-size: 11px;
+    }
+
+
+    /* PERFORMANCE CARD */
+
+    .hero-card {
+        width: 100%;
+
+        transform: none;
+    }
+
+    .hero-card:hover {
+        transform: translateY(-3px);
+    }
+
+
+    /* SECTIONS */
+
+    .exam-section,
+    .test-section,
+    .features {
+        padding: 70px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+
+    /* EXAMS */
+
+    .exam-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TEST SERIES */
+
+    .test-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .test-card {
+        padding: 23px;
+    }
+
+
+    /* FEATURES */
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        margin: 30px 5% 70px;
+
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .cta h2 {
+        font-size: 26px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   15. VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-stats {
+        gap: 15px;
+    }
+
+    .price-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .series-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+}

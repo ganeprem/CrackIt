@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CrackIt</title>
+
+    <link rel="stylesheet" href="auth.css">
+
+</head>
+
+
+<body>
+
+
+<div class="auth-page">
+
+
+    <!-- LEFT -->
+
+    <div class="auth-left">
+
+        <a href="index.html" class="logo">
+            Crack<span>It</span>
+        </a>
+
+
+        <div class="left-content">
+
+            <div class="small-badge">
+                🎯 Start your preparation today
+            </div>
+
+
+            <h1>
+
+                Prepare smarter.<br>
+
+                <span>Score higher.</span>
+
+            </h1>
+
+
+            <p>
+
+                Create your CrackIt account and get access
+                to mock tests, detailed solutions and
+                performance analytics.
+
+            </p>
+
+
+            <div class="benefits">
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">✓</div>
+
+                    <div>
+
+                        <h3>Quality Mock Tests</h3>
+
+                        <p>
+                            Questions designed for real exam preparation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">✓</div>
+
+                    <div>
+
+                        <h3>Track Your Progress</h3>
+
+                        <p>
+                            Monitor accuracy, speed and performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">✓</div>
+
+                    <div>
+
+                        <h3>Detailed Solutions</h3>
+
+                        <p>
+                            Learn from every question you attempt.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT -->
+
+    <div class="auth-right">
+
+
+        <div class="auth-box">
+
+
+            <div class="mobile-logo">
+                Crack<span>It</span>
+            </div>
+
+
+            <h2>Create your account</h2>
+
+
+            <p class="auth-subtitle">
+
+                Start preparing smarter with CrackIt.
+
+            </p>
+
+
+
+            <form>
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+
+                    <div class="password-container">
+
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            minlength="8"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            onclick="togglePassword()"
+                        >
+
+                            Show
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Enter password again"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+
+                    Create Account
+
+                </button>
+
+
+            </form>
+
+
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+
+
+            <button class="google-button">
+
+                <span class="google-logo">
+                    G
+                </span>
+
+                Sign up with Google
+
+            </button>
+
+
+
+            <p class="switch-page">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+
+            <a href="index.html" class="back-home">
+
+                ← Back to CrackIt
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+function togglePassword() {
+
+    const password =
+        document.getElementById("password");
+
+    const button =
+        document.querySelector(".show-password");
+
+
+    if (password.type === "password") {
+
+        password.type = "text";
+
+        button.textContent = "Hide";
+
+    }
+
+    else {
+
+        password.type = "password";
+
+        button.textContent = "Show";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
